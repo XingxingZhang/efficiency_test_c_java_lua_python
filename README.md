@@ -1,7 +1,37 @@
 
 This project compares the performance of C++, Java, Lua and Python on sorting random integers.
 
-# Requirements / Dependencies / Settings
+# Experimental Setup
+* Task <br />
+Sort three sets of 10,000,000 randomly generated integers using all these languages.
+For each language, two sorting algorithm will be tested:
+..1. self-implmented quick sort. The tested quick sort algorithm is as follows (c++ for example)
+```c++
+void _quick_sort(int a[], int istart, int iend)
+{
+  if(istart >= iend)
+    return;
+  int low = istart, high = iend;
+  int tmp = a[istart];
+  while( low != high )
+  {
+    while(low != high && tmp <= a[high]) high --;
+    if(low != high) a[low] = a[high];
+    while(low != high && tmp >= a[low]) low ++;
+    if(low != high) a[high] = a[low];
+  }
+  a[low] = tmp;
+  _quick_sort(a, istart, low - 1);
+  _quick_sort(a, low + 1, iend);
+}
+
+void quick_sort(int a[], int N)
+{
+  _quick_sort(a, 0, N-1);
+}
+```
+
+
 * System <br />
 ```
 1.7 GHz Intel Core i5
@@ -45,9 +75,9 @@ Python 2.7.5 (default, Mar  9 2014, 22:15:05)
 ```
 
 # Results
-| Language | quick sort    | native sort algorithm |
-| -------- | ------------- | ----- |
-| C++      | right-aligned | $1600 |
+| Language | Quick Sort    | Native Sort Algorithm | IO (load) | 
+| -------- | ------------- | --------------------- | --------- |
+| C++      | 1.09 | 0.95 | 1.48 |
 | Java     | centered      |   $12 |
 | Lua      | are neat      |    $1 |
 | Python   | are neat      |    $1 |
