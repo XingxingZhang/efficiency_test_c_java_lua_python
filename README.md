@@ -4,7 +4,7 @@ This project compares the performance of C++, Java, Lua and Python on sorting ra
 # Experimental Setup
 ### Task
 Sort three sets of 10,000,000 randomly generated integers using all these languages.
-For each language, two sorting algorithm will be tested:
+For each language, two sorting algorithm will be tested:<br />
 1. self-implmented quick sort. The tested quick sort algorithm is as follows (c++ for example)
 ```c++
 void _quick_sort(int a[], int istart, int iend)
@@ -39,7 +39,7 @@ void quick_sort(int a[], int N)
 OS X 10.9.5 (13F34)
 ```
 
-* G++ <br />
+### G++
 ```
 Configured with: --prefix=/Applications/Xcode.app/Contents/Developer/usr --with-gxx-include-dir=/usr/include/c++/4.2.1
 Apple LLVM version 5.1 (clang-503.0.40) (based on LLVM 3.4svn)
@@ -47,14 +47,14 @@ Target: x86_64-apple-darwin13.4.0
 Thread model: posix
 ```
 
-* JDK <br />
+### JDK
 ```
 java version "1.8.0_25"
 Java(TM) SE Runtime Environment (build 1.8.0_25-b17)
 Java HotSpot(TM) 64-Bit Server VM (build 25.25-b02, mixed mode)
 ```
 
-* LuaJIT <br />
+### LuaJIT
 ```
 LuaJIT 2.1.0-alpha -- Copyright (C) 2005-2015 Mike Pall. http://luajit.org/
 
@@ -68,7 +68,7 @@ LuaJIT 2.1.0-alpha -- Copyright (C) 2005-2015 Mike Pall. http://luajit.org/
 JIT: ON SSE2 SSE3 SSE4.1 fold cse dce fwd dse narrow loop abc sink fuse
 ```
 
-* Python <br />
+### Python
 ```
 Python 2.7.5 (default, Mar  9 2014, 22:15:05) 
 [GCC 4.2.1 Compatible Apple LLVM 5.0 (clang-500.0.68)] on darwin
