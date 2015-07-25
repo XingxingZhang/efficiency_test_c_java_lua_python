@@ -1,0 +1,2240 @@
+rm: *.txt: No such file or directory
+{
+  outfile : "rndints1.txt"
+  seed : 1
+  maxv : 10000000
+  nrand : 10000000
+  minv : 1
+}
+{
+  outfile : "rndints2.txt"
+  seed : 2
+  maxv : 10000000
+  nrand : 10000000
+  minv : 1
+}
+{
+  outfile : "rndints3.txt"
+  seed : 3
+  maxv : 10000000
+  nrand : 10000000
+  minv : 1
+}
+generate random number done!
+
+
+
+========test C++=========
+rm test_sort
+g++ -O3 test_sort.cpp -o test_sort
+
+==test1==
+load time spend 1.490062 s
+quick_sort time spend 1.100021 s
+native qsort time spend 2.208511 s
+native algorithm sort time spend 0.943571 s
+
+==test2==
+load time spend 1.478168 s
+quick_sort time spend 1.098420 s
+native qsort time spend 2.167365 s
+native algorithm sort time spend 0.960967 s
+
+==test3==
+load time spend 1.474789 s
+quick_sort time spend 1.072678 s
+native qsort time spend 2.424493 s
+native algorithm sort time spend 0.955913 s
+========test C++ done=========
+
+
+
+========test Java=========
+
+ ==test1==
+load data time spend 6.260000 s
+quick sort spend 1.565000 s
+Arrays.sort spend 1.187000 s
+
+ ==test2==
+load data time spend 6.270000 s
+quick sort spend 1.616000 s
+Arrays.sort spend 1.270000 s
+
+ ==test3==
+load data time spend 6.349000 s
+quick sort spend 1.560000 s
+Arrays.sort spend 1.150000 s
+========test Java done=========
+
+
+
+========test Lua=========
+
+==test1==
+load time 6.270477 s
+arr size = 10000000
+==native sort demo==	
+before sort	
+time spend 6.183836 s
+after sort	
+==native sort demo done==
+	
+==quick sort demo==	
+before sort	
+time spend 2.798775 s
+after sort	
+==quick sort demo done==
+	
+
+==test2==
+load time 6.317910 s
+arr size = 10000000
+==native sort demo==	
+before sort	
+time spend 6.271107 s
+after sort	
+==native sort demo done==
+	
+==quick sort demo==	
+before sort	
+time spend 3.152263 s
+after sort	
+==quick sort demo done==
+	
+
+==test3==
+load time 6.305714 s
+arr size = 10000000
+==native sort demo==	
+before sort	
+time spend 6.302121 s
+after sort	
+==native sort demo done==
+	
+==quick sort demo==	
+before sort	
+time spend 2.798372 s
+after sort	
+==quick sort demo done==
+	
+========test Lua done=========
+
+
+
+========test Python=========
+
+==test1==
+load time spend 14.712767 s
+array size 10000000
+list.sort spend 11.379197 s
+Traceback (most recent call last):
+  File "test_sort.py", line 51, in <module>
+    quickSort(a, 0, len(a) - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+RuntimeError: maximum recursion depth exceeded
+
+==test2==
+load time spend 14.062597 s
+array size 10000000
+list.sort spend 11.916104 s
+^CTraceback (most recent call last):
+  File "test_sort.py", line 51, in <module>
+    quickSort(a, 0, len(a) - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 26, in quickSort
+    while low != high and a[low] <= tmp:
+KeyboardInterrupt
+
+==test3==
+load time spend 14.429042 s
+array size 10000000
+list.sort spend 12.342626 s
+^CTraceback (most recent call last):
+  File "test_sort.py", line 51, in <module>
+    quickSort(a, 0, len(a) - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 30, in quickSort
+    quickSort(a, ibegin, low - 1)
+  File "test_sort.py", line 27, in quickSort
+    low = low + 1
+KeyboardInterrupt
+========test Python done=========
+
