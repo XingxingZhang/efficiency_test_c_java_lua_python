@@ -44,9 +44,9 @@ Python 2.7.5 (default, Mar  9 2014, 22:15:05)
 [GCC 4.2.1 Compatible Apple LLVM 5.0 (clang-500.0.68)] on darwin
 ```
 
-# Results (unit: second)
+# Results
 | Language | quick sort    | native sort algorithm |
-| -------- |:-------------:|: -----:|
+| -------- | ------------- | ----- |
 | C++      | right-aligned | $1600 |
 | Java     | centered      |   $12 |
 | Lua      | are neat      |    $1 |
