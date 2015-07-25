@@ -1,7 +1,14 @@
 
 This project compares the performance of C++, Java, Lua and Python on sorting random integers.
 
-# Requirements / Dependencies (including configurations on my machine)
+# Requirements / Dependencies / Settings
+* System <br />
+```
+1.7 GHz Intel Core i5
+4 GB 1333 MHz DDR3
+OS X 10.9.5 (13F34)
+```
+
 * G++ <br />
 ```
 Configured with: --prefix=/Applications/Xcode.app/Contents/Developer/usr --with-gxx-include-dir=/usr/include/c++/4.2.1
