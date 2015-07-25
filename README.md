@@ -2,7 +2,7 @@
 This project compares the performance of C++, Java, Lua and Python on sorting random integers.
 
 # Experimental Setup
-* Task <br />
+* ###Task <br />
 Sort three sets of 10,000,000 randomly generated integers using all these languages.
 For each language, two sorting algorithm will be tested:
 ..1. self-implmented quick sort. The tested quick sort algorithm is as follows (c++ for example)
