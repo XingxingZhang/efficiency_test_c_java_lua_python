@@ -5,7 +5,8 @@ This project compares the performance of C++, Java, Lua and Python on sorting ra
 ### Task
 Sort three sets of 10,000,000 randomly generated integers using all these languages.
 For each language, two sorting algorithm will be tested:<br />
-1. self-implmented quick sort. The tested quick sort algorithm is as follows (c++ for example)
+**1. self-implmented quick sort** <br /> 
+The tested quick sort algorithm is implmented as follows (c++ for example)
 ```c++
 void _quick_sort(int a[], int istart, int iend)
 {
@@ -30,6 +31,12 @@ void quick_sort(int a[], int N)
   _quick_sort(a, 0, N-1);
 }
 ```
+
+**2. native sort algorithm** <br /> 
+* C++: STL sort
+* Java: Arrays.sort
+* Lua: table.sort
+* Python: list.sort
 
 
 ### System
@@ -72,6 +79,11 @@ JIT: ON SSE2 SSE3 SSE4.1 fold cse dce fwd dse narrow loop abc sink fuse
 ```
 Python 2.7.5 (default, Mar  9 2014, 22:15:05) 
 [GCC 4.2.1 Compatible Apple LLVM 5.0 (clang-500.0.68)] on darwin
+```
+
+# Run the Experiment
+```
+./run_test.sh
 ```
 
 # Results
