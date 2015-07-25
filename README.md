@@ -11,11 +11,14 @@ Thread model: posix
 ```
 
 * JDK <br />
+```
 java version "1.8.0_25"
 Java(TM) SE Runtime Environment (build 1.8.0_25-b17)
 Java HotSpot(TM) 64-Bit Server VM (build 25.25-b02, mixed mode)
+```
 
 * LuaJIT <br />
+```
 LuaJIT 2.1.0-alpha -- Copyright (C) 2005-2015 Mike Pall. http://luajit.org/
 
  _____              _     
@@ -26,10 +29,13 @@ LuaJIT 2.1.0-alpha -- Copyright (C) 2005-2015 Mike Pall. http://luajit.org/
   \_/\___/|_|  \___|_| |_|
 
 JIT: ON SSE2 SSE3 SSE4.1 fold cse dce fwd dse narrow loop abc sink fuse
+```
 
 * Python <br />
+```
 Python 2.7.5 (default, Mar  9 2014, 22:15:05) 
 [GCC 4.2.1 Compatible Apple LLVM 5.0 (clang-500.0.68)] on darwin
+```
 
 # Results (unit: second)
 | Language | quick sort    | native sort algorithm |
