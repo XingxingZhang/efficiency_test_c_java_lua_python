@@ -87,7 +87,8 @@ Python 2.7.5 (default, Mar  9 2014, 22:15:05)
 ```
 
 # Results
-Note the time unit is **second**. The time is average over three runs.
+Note the time unit is **second**. The time is average over three runs. <br />
+
 | Language | Quick Sort    | Native Sort Algorithm | IO (load) | 
 | -------- | ------------- | --------------------- | --------- |
 | C++      | 1.09 | 0.95 | 1.48 |
