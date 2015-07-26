@@ -1,4 +1,3 @@
-
 This project compares the performance of C++, Java, Lua and Python on sorting random integers.
 
 # Experimental Setup
@@ -34,9 +33,9 @@ void quick_sort(int a[], int N)
 
 **2. native sort algorithm** <br /> 
 * C++: STL sort ([Musser’s introsort](https://en.wikipedia.org/wiki/Introsort))
-* Java: Arrays.sort
-* Lua: table.sort
-* Python: list.sort
+* Java: Arrays.sort ([Dual-Pivot Quicksort by Vladimir Yaroslavskiy, Jon Bentley, and Joshua Bloch](http://docs.oracle.com/javase/8/docs/api/java/util/Arrays.html#sort-int:A-))
+* Lua: table.sort ([quick sort](http://lua-users.org/wiki/LuaSorting))
+* Python: list.sort ([Timsort](https://en.wikipedia.org/wiki/Timsort))
 
 
 ### System
@@ -96,7 +95,4 @@ Note the time unit is **second**. The time is average over three runs. <br />
 | Lua      | 2.92 | 6.25 | 6.30 |
 | Python   | N/A  | 11.88 | 14.40 |
 
-# Reference
 
-[1] 
-[2]
