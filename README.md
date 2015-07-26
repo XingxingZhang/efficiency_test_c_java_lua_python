@@ -87,10 +87,11 @@ Python 2.7.5 (default, Mar  9 2014, 22:15:05)
 ```
 
 # Results
+Note the time unit is **second**. The time is average over three runs.
 | Language | Quick Sort    | Native Sort Algorithm | IO (load) | 
 | -------- | ------------- | --------------------- | --------- |
 | C++      | 1.09 | 0.95 | 1.48 |
-| Java     | centered      |   $12 |
-| Lua      | are neat      |    $1 |
-| Python   | are neat      |    $1 |
+| Java     | 1.56 | 1.20 | 6.29 |
+| Lua      | 2.92 | 6.25 | 6.30 |
+| Python   | N/A  | 11.88 | 14.40 |
 
