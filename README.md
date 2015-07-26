@@ -33,7 +33,7 @@ void quick_sort(int a[], int N)
 ```
 
 **2. native sort algorithm** <br /> 
-* C++: STL sort
+* C++: STL sort ([Musser’s introsort](https://en.wikipedia.org/wiki/Introsort))
 * Java: Arrays.sort
 * Lua: table.sort
 * Python: list.sort
@@ -96,3 +96,7 @@ Note the time unit is **second**. The time is average over three runs. <br />
 | Lua      | 2.92 | 6.25 | 6.30 |
 | Python   | N/A  | 11.88 | 14.40 |
 
+# Reference
+
+[1] 
+[2]
